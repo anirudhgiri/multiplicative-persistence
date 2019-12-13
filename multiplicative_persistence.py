@@ -10,18 +10,9 @@ def mult_per(n):
     ans = n
     while(ans >= 10):
         ans = mul(ans)
-        #print(ans)
+        print(ans)
         count += 1
     return count
 
-
-counter = 0
-record = -1
-while True:
-    per = mult_per(counter)
-    if(per > record):
-        print(counter,per)
-        record += 1
-    counter += 1
-
-
+n = input()
+print(mult_per(n))
